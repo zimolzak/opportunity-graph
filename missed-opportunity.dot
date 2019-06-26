@@ -12,7 +12,7 @@ red_flag_pos -> No_img_or_cons -> missed2
 # right branch no red flags
 
 no_red_flag -> poor_exam
-no_red_flag -> positive_exam
+no_red_flag -> Neu_exam_pos
 no_red_flag -> neg_exam -> not_missed5
 
 poor_exam -> CT_done2
@@ -23,7 +23,9 @@ CT_done2 -> clinical_judg
 clinical_judg -> not_missed2
 clinical_judg -> potential_missed
 
-
+Neu_exam_pos -> CT_done1 -> not_missed2
+Neu_exam_pos -> MRI_done
+Neu_exam_pos -> Neuro_cons
 
 
 }
