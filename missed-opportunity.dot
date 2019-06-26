@@ -1,0 +1,6 @@
+digraph{
+
+dizz_headache -> red_flag_pos
+dizz_headache -> no_red_flag
+
+}
