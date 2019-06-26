@@ -3,4 +3,10 @@ digraph{
 dizz_headache -> red_flag_pos
 dizz_headache -> no_red_flag
 
+red_flag_pos -> CT_done
+CT_done -> neg -> missed1
+CT_done -> pos -> likely_admit
+red_flag_pos -> MRI_or_consult -> not_missed1
+red_flag_pos -> No_img_or_cons -> missed2
+
 }
