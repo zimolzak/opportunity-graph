@@ -18,6 +18,7 @@ no_red_flag -> neg_exam -> not_missed5
 poor_exam -> CT_done2
 poor_exam -> MRI_done -> not_missed3
 poor_exam -> Neuro_cons -> not_missed4
+poor_exam -> No_studies -> potential_missed
 
 CT_done2 -> clinical_judg
 clinical_judg -> not_missed2
